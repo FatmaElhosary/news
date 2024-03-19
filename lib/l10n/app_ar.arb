@@ -1,0 +1,15 @@
+{
+    "language":"اللغة",
+    "settings":"الإعدادات",
+    "arabic":"اللغة العربية",
+    "english":"اللغة الإنجليزية",
+    "newsApp":"الأخبار",
+    "categories":"الفئات",
+    "pickCategory":"اختر الفئة التى تفضلها ",
+    "health":"الصحة",
+    "bussines":"ريادة الأعمال",
+    "environment":"البيئة",
+    "science":"العلوم",
+    "sports":"الرياضة",
+    "politics":"السياسة"
+}
