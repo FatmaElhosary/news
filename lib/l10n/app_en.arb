@@ -7,9 +7,11 @@
     "categories":"Categories",
     "pickCategory":"Pick your category of interest",
     "health":"Health",
-    "bussines":"Bussines",
-    "environment":"Environment",
+    "business":"Business",
+    "entertainment":"Entertainment",
     "science":"Science",
     "sports":"Sports",
-    "politics":"Politics"
+    "general":"General",
+    "noSources":"No Sources For",
+    "somthingError":"Somthing Error Try again"
 }

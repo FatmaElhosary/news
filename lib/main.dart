@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:news/app_theme.dart';
 import 'package:news/providers/language_provider.dart';
-import 'package:news/screens/home_screen/categories_screen.dart';
-import 'package:news/screens/settings/settings.dart';
+import 'package:news/screens/home_screen/home_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:news/screens/sources_screen/sources_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -26,11 +24,9 @@ class NewsApp extends StatelessWidget {
       theme: AppTheme.appTheme,
       themeMode: ThemeMode.light,
       routes: {
-        CategoriesScreen.routeName: (context) => const CategoriesScreen(),
-        SourcesScreen.routeName: (_) => const SourcesScreen(),
-        SettingsBody.routeName: (_) => const SettingsBody(),
+        HomeScreen.routeName: (_) => const HomeScreen(),
       },
-      initialRoute: CategoriesScreen.routeName,
+      initialRoute: HomeScreen.routeName,
     );
   }
 }
