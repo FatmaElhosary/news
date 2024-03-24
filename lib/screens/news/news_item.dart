@@ -1,8 +1,6 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:news/models/news_response.dart';
 import 'package:news/screens/news/article_img.dart';
-import 'package:news/widgets/waiting.dart';
 
 class NewsItem extends StatelessWidget {
   const NewsItem({super.key, required this.article});
