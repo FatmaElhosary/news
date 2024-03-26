@@ -3,6 +3,7 @@ import 'package:news/app_theme.dart';
 import 'package:news/providers/language_provider.dart';
 import 'package:news/screens/home_screen/home_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:news/screens/news/search_articles.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -25,6 +26,7 @@ class NewsApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       routes: {
         HomeScreen.routeName: (_) => const HomeScreen(),
+        SearchArticles.routeName: (_) => const SearchArticles(),
       },
       initialRoute: HomeScreen.routeName,
     );

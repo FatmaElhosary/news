@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news/models/news_response.dart';
 import 'package:news/screens/news/article_img.dart';
+import 'package:news/widgets/waiting.dart';
 
 class NewsItem extends StatelessWidget {
   const NewsItem({super.key, required this.article});
@@ -37,6 +38,7 @@ class NewsItem extends StatelessWidget {
               style: Theme.of(context).textTheme.displaySmall,
             ),
           ),
+      
         ],
       ),
     );

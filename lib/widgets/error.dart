@@ -6,10 +6,10 @@ class ErrorTab extends StatelessWidget {
   final String errrorMsg;
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Text(
+    return Text(
       errrorMsg,
       style: TextStyle(color: AppTheme.redColor),
-    ));
+      textAlign: TextAlign.center,
+    );
   }
 }

@@ -42,4 +42,19 @@ class ApiUtils {
       rethrow;
     }
   }
+
+  //search news
+  static Future<NewsResponse> getNewsbyQ(String q) async {
+    Uri url = Uri.https(ApiConstants.baseUrl, ApiConstants.newsEndpoint,
+        {"apiKey": ApiConstants.apiKEY, "q": q});
+    try {
+      var res = await http.get(url);
+      return NewsResponse.fromJson(
+          jsonDecode(res.body) as Map<String, dynamic>);
+    } catch (e) {
+      print(e);
+      rethrow;
+      //rethrow;
+    }
+  }
 }

@@ -5,6 +5,7 @@ import 'package:news/screens/categories/categories_items.dart';
 import 'package:news/screens/categories/category_details.dart';
 import 'package:news/screens/home_screen/drawer.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:news/screens/news/search_articles.dart';
 import 'package:news/screens/settings/settings.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -31,11 +32,22 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         backgroundColor: Colors.transparent,
         appBar: AppBar(
+          toolbarHeight: MediaQuery.of(context).size.height * .08,
           title: Text(categorySelected != null
               ? categorySelected!.categoryType
               : selectedDrawerItem == DrawerItem.categories
                   ? appLocal.newsApp
                   : appLocal.settings),
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, SearchArticles.routeName);
+                },
+                icon: const Icon(
+                  Icons.search,
+                  size: 35,
+                ))
+          ],
         ),
         body: categorySelected != null
             ? CategoryDetails(
