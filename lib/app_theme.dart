@@ -9,6 +9,9 @@ class AppTheme {
   static Color darkBlueColor = const Color(0xFF003E90);
   static Color brownColor = const Color(0xFFCF7E48);
   static Color yellowColor = const Color(0xFFF2D352);
+  static Color greenColor = const Color(0xFF39A552);
+  static Color greyColor = const Color(0xFF79828B);
+
   static ThemeData appTheme = ThemeData(
       primaryColor: const Color(0xFF39A552),
       useMaterial3: true,
@@ -24,6 +27,11 @@ class AppTheme {
                   bottomLeft: Radius.circular(50),
                   bottomRight: Radius.circular(50)))),
       textTheme: TextTheme(
+        displaySmall: TextStyle(
+            fontFamily: 'Poppins',
+            fontSize: 10,
+            fontWeight: FontWeight.w400,
+            color: greyColor),
         titleLarge: TextStyle(
             fontFamily: 'Roppins',
             fontSize: 24,
@@ -44,5 +52,10 @@ class AppTheme {
             fontSize: 22,
             fontWeight: FontWeight.w400,
             color: whiteColor),
+        bodySmall: TextStyle(
+            fontFamily: 'Exo',
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+            color: greenColor),
       ));
 }

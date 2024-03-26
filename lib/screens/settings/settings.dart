@@ -15,37 +15,22 @@ class _SettingsBodyState extends State<SettingsBody> {
   @override
   Widget build(BuildContext context) {
     final appLocal = AppLocalizations.of(context)!;
-    return Stack(
-      children: [
-        Container(
-              color: AppTheme.whiteColor,
-              child: Image.asset(
-                'assets/images/pattern.png',
-                width: double.infinity,
-                height: double.infinity,
-                fit: BoxFit.cover,
-              ),
-            ),
-        Scaffold(
-          body: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 17.0),
-                  child: Text(
-                    appLocal.language,
-                    style: Theme.of(context).textTheme.titleSmall,
-                  ),
-                ),
-                const LanguageDropDown(),
-              ],
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 17.0),
+            child: Text(
+              appLocal.language,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
-        ),
-      ],
+          const LanguageDropDown(),
+        ],
+      ),
     );
   }
 }

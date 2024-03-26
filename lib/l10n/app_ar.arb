@@ -7,9 +7,11 @@
     "categories":"الفئات",
     "pickCategory":"اختر الفئة التى تفضلها ",
     "health":"الصحة",
-    "bussines":"ريادة الأعمال",
-    "environment":"البيئة",
+    "business":"ريادة الأعمال",
+    "entertainment":"الترفيهية",
     "science":"العلوم",
     "sports":"الرياضة",
-    "politics":"السياسة"
+    "general":"العامة",
+    "noSources":"لا يوجد مصادر",
+    "somthingError":"حدث خطأ أعد المحاولة"
 }
